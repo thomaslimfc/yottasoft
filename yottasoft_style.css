@@ -1,0 +1,326 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Smashing Magazine
+Version:    1.1
+Last change:    05/02/08 [fixed Float bug, vf]
+Assigned to:    Vitaly Friedman (vf), Sven Lennartz (sl)
+Primary use:    Magazine 
+-------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------
+[Layout]
+
+* body
+    + Header / #header
+    + Content / #content
+        - Left column / #leftcolumn
+        - Right column / #rightcolumn
+        - Sidebar / #sidebar
+            - RSS / #rss
+            - Search / #search
+            - Boxes / .box
+            - Sideblog / #sideblog
+    + Footer / #footer
+
+Navigation    #navbar
+Advertisements    .ads
+Content header    h2
+-------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------
+[Color codes]
+
+Background: #ffffff (white)
+Content:    #1e1e1e (light black)
+Header h1:  #9caa3b (green)
+Header h2:  #ee4117 (red)
+Footer:     #b5cede (dark black)
+
+a (standard):   #0040b6 (dark blue)
+a (visited):    #5999de (light blue)
+a (active): #cc0000 (pink)
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Typography]
+
+Body copy:      1.2em/1.6em Verdana, Helvetica, Arial, Geneva, sans-serif;
+Headers:        2.7em/1.3em Helvetica, Arial, "Lucida Sans Unicode", Verdana, sans-serif;
+Input, textarea:    1.1em Helvetica, Verdana, Geneva, Arial, sans-serif;
+Sidebar heading:    1.5em Helvetica, Trebuchet MS, Arial, sans-serif;
+
+Notes:  decreasing heading by 0.4em with every subsequent heading level
+-------------------------------------------------------------------*/   
+
+
+
+
+
+/* -------------------------------------------------- */
+
+
+/* headers/index.html */
+
+.bd-placeholder-img
+{
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px)
+{
+    .bd-placeholder-img-lg
+    {
+        font-size: 3.5rem;
+    }
+}
+
+.b-example-divider
+{
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr
+{
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi
+{
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller
+{
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav
+{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* headers/header.css */
+
+.form-control-dark
+{
+    border-color: var(--bs-gray);
+}
+
+.form-control-dark:focus
+{
+    border-color: #fff;
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+  
+.text-small
+{
+    font-size: 85%;
+}
+  
+.dropdown-toggle
+{
+    outline: 0;
+}
+
+
+/* -------------------------------------------------- */
+
+
+/* Body */
+
+.pageTitle_description_div
+{
+    margin: 30px 20% 40px 20%;
+}
+
+.payment_pricing_div
+{
+    margin: 30px 8% 40px 8%;
+}
+
+#honeycomb_div
+{
+    padding-bottom: 2%;
+}
+
+
+/* FAQs - Frequently Asked Questions */
+
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+/* $bg: #fff;
+$text: #7288a2;
+$gray: #4d5974;
+$lightgray: #e5e5e5;
+$blue: #03b5d2; */
+
+.faqs_container
+{
+    margin: 0 auto;
+    padding: 4rem;
+    width: 48rem;
+
+    /* body */
+    /* margin: 0; */
+    /* padding: 0; */
+    font-family: 'Hind', sans-serif;
+    background: $bg;
+    color: $gray;
+    display: flex;
+    min-height: 100vh;
+
+    /* * */
+    box-sizing: border-box;
+    &::before, &::after
+    {
+        box-sizing: border-box;
+    }    
+}
+
+.faqs_accordion
+{
+    .faqs_accordion-item
+    {
+        border-bottom: 1px solid $lightgray;
+        faqs_button[aria-expanded='true']
+        {
+            border-bottom: 1px solid $blue;
+        }
+    }
+    faqs_button
+    {
+        position: relative;
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 1em 0;
+        color: $text;
+        font-size: 1.15rem;
+        font-weight: 400;
+        border: none;
+        background: none;
+        outline: none;
+        &:hover, &:focus
+        {
+            cursor: pointer;
+            color: $blue;
+            &::after
+            {
+                cursor: pointer;
+                color: $blue;
+                border: 1px solid $blue;
+            }
+        }
+        .faqs_accordion-title
+        {
+            padding: 1em 1.5em 1em 0;
+        }
+        .faqs_icon
+        {
+            display: inline-block;
+            position: absolute;
+            top: 18px;
+            right: 0;
+            width: 22px;
+            height: 22px;
+            border: 1px solid;
+            border-radius: 22px;
+            &::before
+            {
+                display: block;
+                position: absolute;
+                content: '';
+                top: 9px;
+                left: 5px;
+                width: 10px;
+                height: 2px;
+                background: currentColor;
+            } 
+            &::after
+            {
+                display: block;
+                position: absolute;
+                content: '';
+                top: 5px;
+                left: 9px;
+                width: 2px;
+                height: 10px;
+                background: currentColor;
+            }
+        }   
+    }
+    faqs_button[aria-expanded='true']
+    {
+        color: $blue;
+        .faqs_icon
+        {
+            &::after
+            {
+            width: 0;
+            }
+        }
+        + .faqs_accordion-content
+        {
+            opacity: 1;
+            max-height: 9em;
+            transition: all 200ms linear;
+            will-change: opacity, max-height;
+        }
+    }    
+    .faqs_accordion-content
+    {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 200ms linear, max-height 200ms linear;
+        will-change: opacity, max-height;
+        
+        .faqs_p
+        {
+            font-size: 1rem;
+            font-weight: 300;
+            margin: 2em 0;
+        }
+    }
+}
+
+
+/* -------------------------------------------------- */
+
+
+/* Footers */
+
+#yt-logo-footer
+{
+    padding-bottom: 20px;
+}
+
+
+/* -------------------------------------------------- */
