@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Thomas Fang-chern Lim and Yottasoft Technology assistants contributors">
+        <meta name="generator" content="Hugo 0.104.2">
+        <title>Yottasoft Technology</title>
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+
+        <!-- CSS -->
+        <link href="bootstrap-5.2.3-examples\bootstrap-5.2.3-examples\assets\dist\css\bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="yottasoft_style.css">
+        <!--  -->
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/pricing/">
+                            <!-- Honeycombs -->
+        <link rel="stylesheet" type="text/css" href="honeycombs.css">
+        <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+                            <!-- Drop-downs -->
+        <!-- <link rel="stylesheet" type="text/css" href="nav-5.css"> -->
+		<!-- <link rel="stylesheet" type="text/css" href="nav-5.js"> -->
+		<!-- <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'> -->
+    
+        <!-- JavaScript -->
+        <script src="bootstrap-5.2.3-examples\bootstrap-5.2.3-examples\assets\dist\jsbootstrap.bundle.min.js"></script>
+        <script src="yottasoft_script.js"></script>
+    </head>
+
+    <!-- NAVIGATION -->
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <img id="yt-logo-header" src="images/YT_white.png" alt="Yottasoft Technology" height="40">
+      
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="yottasoft_bootstrap.html" class="nav-link px-2 text-light">Home</a></li>
+                    <li><a href="yottasoft_bootstrap.html" class="nav-link px-2 text-light">Services</a></li>
+                    <li><a href="#" class="nav-link px-2 text-light">Products</a></li>
+                    <li><a href="yottasoft_paymentmethods.html" class="nav-link px-2 text-warning">Payment</a></li>
+                    <li><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 text-light">About</a></li>
+                        <!-- 
+                            <a> xxx </a>
+                            {
+                                xxx                 [Original]
+                                {
+                                    Home;
+                                    Features;
+                                    Pricing;
+                                    FAQs;
+                                    About;
+                                }
+                            }
+
+                            text-xxx
+                            {
+                                xxx
+                                {
+                                    secondary - selected page;                  [Original]
+                                    white - other pages not selected;                   [Original]
+                                    primary;
+                                    tertiary;
+                                }
+                            }
+                        -->
+                </ul>
+      
+                <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                </form> -->
+      
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="pageTitle_description_div">
+        <center><h1 class="display-6 fw-normal">Pick your preferred payment methods</h1></center>
+        <center>
+            <p class="fs-5 text-muted">
+                All payment details are clearly stated below.
+            </p>
+        </center>    
+    </div>
+
+    <body>
+        <div class="payment_pricing_div row  row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3 text-bg-success border-primary">
+                        <h4 class="my-0 fw-normal text-light">ShopeePay Wallet</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="images/shopee-pay-wallet.png" alt="ShopeePay" height="100px">
+                        <!-- <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1> -->
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Username:</li>
+                            <li>tct_penang</li>
+                                <br>
+                            <li>Purpose (Optional):</li>
+                            <li>YOUR NAME</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-success">Pay now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3 text-bg-success border-primary"">
+                        <h4 class="my-0 fw-normal text-light">Touch 'n Go eWallet</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="images/touch-n-go-ewallet.png" alt="Touch 'n Go eWallet" height="100px">
+                        <!-- <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1> -->
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Who To Transfer:</li>
+                            <li>+60 174026354</li>
+                                <br>
+                            <li>Recipient Reference:</li>
+                            <li>YOUR NAME</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-success text-light">Pay now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3 text-bg-success border-primary">
+                        <h4 class="my-0 fw-normal text-light">PayPal e-Wallet</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="images/paypal-wallet.png" alt="" height="100px">
+                        <!-- <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1> -->
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Email Address:</li>
+                            <li>tct.penang@gmail.com</li>
+                                <br>
+                            <li>Mobile Number:</li>
+                            <li>+60174026354</li>
+                        </ul>
+                        <a href="https://www.paypal.com/myaccount/transfer/" type="button" class="w-100 btn btn-lg btn-outline-success" target="_blank">Pay now</a>
+                    </div>
+                </div>
+                <!-- 2.5% international transfer charge fee -->
+            </div>
+        </div>
+
+
+
+
+
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why is the sky blue?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever discover aliens?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does the Earth weigh?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do airplanes stay up?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </body>
+
+    <footer>
+        <div class="b-example-divider"></div>
+
+            <div class="container">
+                <footer class="py-3 my-4">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                        <li class="nav-item"><a href="yottasoft_bootstrap.html" class="nav-link px-2 text-muted">Services</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Products</a></li>
+                        <li class="nav-item"><a href="yottasoft_paymentmethods.html" class="nav-link px-2 text-muted">Payment</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                    </ul>
+
+                    <center><img id="yt-logo-footer" src="images/YT_blue.png" alt="Yottasoft Technology" height="125"></center>
+
+                    <!-- @ 2022 Company Inc. -->
+                    <p class="text-center text-muted">Copyright &copy; 2022 Yottasoft Technology Group Holdings Co. Ltd.</p>
+                    <p class="text-center">All rights reserved.</p>
+                </footer>
+            </div>
+            
+    </footer>
+</html>
